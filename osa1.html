@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PVL-Rails</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header">
+    <div class="logo">
+      <h1>PVL-Rails</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" class="active">Aloitus</a></li>
+        <li><a href="osa1.html">1. Tutustutaan web-ohjelmointiin </a></li>
+        <li><a href="osa2.html">2. Tutustutaan Railsiin</a></li>
+        <li><a href="osa3.html">3. Käyttäjätunnukset ja salasanat</a></li>
+        <li><a href="osa4.html">4. Sivut hienoiksi CSS:llä</a></li>
+        <li><a href="osa5.html">5. Viestien lähetys</a></li>
+        <li><a href="osa6.html">6. Web-sovellusten tietoturvasta</a></li>
+        <li><a href="osa7.html">7. Ohjeita tulevaan   </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="page  mar-top30" style="padding:5px;">
+  <div class="primary-col">
+    <div class="generic bdr-bottom-none">
+      <div class="panel" style="color:black;">
+        <div class="title">
+          <h1>Tutustutaan web-ohjelmointiin</h1>
+          <h2>Serveri, tietokanta, selain, http-pyyntö, ääääh! Miten niinku saan sivut nettiin?</h2>
+        </div>
+         <p>Serveri on tietokone, joka sijaitsee jossain päin maailmaa. Serverillä voi pyöriä ohjelmia ja sillä on <i>IP-osoite</i>. Kaikki Internet-verkon tietoliikenne kulkee IP-paketteina. IP-osoite on niinkuin kotiosoite, sen perusteella paketit löytävät perille. IP-osoite voi olla muuttuva, mutta servereillä on yleensä kiinteä IP-osoite joka on sidottu <i>domainiin</i>. IP-osoitteiden ja domainien keskinäiseen muuntamiseen on olemassa oma järjestelmä, <i>DNS</i> eli Domain Name System. 
+         </p> </br>
+
+         <div class="title">
+          <h1>HTTP-pyynnöt</h1>
+          </br>
+          <p>HTTP on protokolla, jota selaimet ja WWW-palvelimet käyttävät tiedonsiirtoon. HTTP perustuu siihen, että asiakas (yleensä selain) lähettää HTTP-pyynnön, johon palvelin vastaa. HTTP-pyyntöjä on useita erilaisia. Yleisimmät HTTP-pyynnöt ovat GET ja POST. GET-pyyntö on tarkoitettu sivun hakemiseen serveriltä, POST taas tiedon lähetykseen serverille. HTTP-pyyntöjen erilaisuuden selittämiseen voi käyttää vertausta postin toiminnasta. POST-pyyntö on kuin postipaketti, joka sisältää tietoa tai asioita ja joka toimitetaan vastaanottajalle niin että hän voi sitä käyttää. GET-pyyntö on taas kuin kuriiri, joka käy pyytämässä esimerkiksi http://google.com -sivua, ja saa vastaukseksi HTML-sivun. </p>
+
+          </br>
+          <h3>Tehtävä: </3> Lataa <a href="https://www.getpostman.com/">Postman-sovellus.</a> Postman on vähän kuin tekstiselain, eli sillä pystyy havainnollistamaan HTTP-pyyntöjen toimintaa. Tee Postmanilla GET-pyyntö johonkin osoitteeseen ja katso millainen vastaus on. Sen jälkeen tee POST-pyyntö osoitteeseen http://httpbin.org/post. Httpbin on testiserveri, joka palauttaa POSTilla lähettämäsi datan sinulle. Serveri saa itse kuitenkin aina määritellä, mitä se palauttaa POST-pyyntöön. Lisää Postmanin Body-kohdasta jokin Key ja Value, lähetä ja katso mitä palautetaan vastauksena. Huomaa myös Postmanin valikosta, kuinka paljon erilaisia HTTP-pyyntöjä onkaan olemassa.
+        </div>
+
+        </br>
+        <h1> Web-ohjelmoinnin työkalut </h1>
+        <h1> Keskustelukysymys: Mitä web-ohjelmoinnin työkaluja tiedät tai olet käyttänyt?</h1>
+
+        <h3> HTML </h3> </br>
+
+        <p>Tee Postmanilla GET-pyyntö osoitteeseen http://google.com. Se palauttaa HTML-tiedoston. Huomaat, että HTML-tiedostoilla on tietty rakenne. Ne koostuvat tageista ja niiden sisällä olevista tageista ja teksteistä. 
+
+        </br> </br>
+        <h3>JavaScript</h3> </br>
+
+        Etsi sivulta script -tagi ja katso millaista koodia sen jälkeen tulee. Se on JavaScriptiä, ja se suoritetaan käyttäjän selaimessa. JavaScript on eri asia kuin Java, ja sitä käytetään selaimen toiminnallisuuksiin sovelluksissa. Tutustu nyt <a href="http://jqueryui.com/">JQuery-UI:n </a> demoihin, niin saat jonkinlaista kuvaa siitä, mihin JavaScriptiä käytetään ohjelmoinnissa. JQuery on JavaScript-kirjasto.  Pääset itse käyttämään JQueryä myöhemmin tällä kurssilla. </p> </br>
+
+        <h3>CSS </h3> </br>
+
+        <p>CSS eli Cascading Style Sheets on taas tarkoitettu sivujen tyylittämiseen. Tutustumme lisää CSS:ään kurssin osassa 6. Esimerkiksi tämän kurssisivuston tekstit ja värit on saatu aikaan CSS:llä. Sivuston CSS on usein määritelty omassa .css -tiedostossaan. CSS-koodilla voidaan määritellä jokaiselle HTML-tagille oma tyyli, esimerkiksi tekstin ja taustan väri sekä fontti. Esimerkiksi seuraava koodi tyylittää h1-tagin (iso otsikko) niin että sen tekstin väri on oranssi ja teksti on keskitetty sivun keskelle. 
+        </br> </br>
+        <code>  
+
+        h1 {
+          color: orange;
+          text-align: center;
+        }
+        </code>
+        </p> </br>
+
+        <h3> Palvelinohjelmointi</h3> </br>
+        <p>Nyt olemme tutustuneet HTML:ään, CSS:ään ja JavaScriptiin. Ne kaikki liittyvät serverin palauttaman koodin näyttämiseen käyttäjälle. Esimerkiksi Postmanilla huomasimme että erilaisissa selaimissa serverin palauttama koodi näkyy erilaisena, Postman ei esimerkiski suorita http://google.com -GET-pyynnön palauttamaa script-tagin sisällä olevaa JavaScript-koodia. </br></br>
+
+        Mutta kuka päättää, mitä serveri palauttaa? Esimerkiksi google-hakuahan tehdessä palautus riippuu siitä, millä hakusanoilla käyttäjä on hakenut. Tähän tarvitaan palvelinohjelmointia. Siihen käytetään monia ohjelmointikieliä, esimerkiksi Pythonia, Javaa ja Ruby On Railsia. Ruby on olio-ohjelmointikieli kuten Javakin, ja Rails on Rubyyn tehty web-ohjelmointikirjasto. Palvelinohjelma huolehtii niin tietokannan käytöstä kuin HTTP-pyyntöjen vastaanottamisesta ja niihin vastaamisesta. Tällä kurssilla koodaamme Ruby On Railsia ja seuraavassa osassa teemmekin oman Rails-projektin. </p>
+
+      
+        </p></br>
+
+        <h3>Tehtävä ennen railsiin siirtymistä: Tee omat nettisivut users.paivola.fi -tunnuksellesi jos niitä ei ole. Tähän on tarkoitus käyttää sen verran aikaa, että ymmärrät HTML:n, CSS:n ja JavaScriptin erot ja osaat luoda yksinkertaisen sivun jossa on käytetty kaikkia näitä kolmea tekniikkaa. Apua sivujen tekoon saat <a href="http://www.w3schools.com/">W3Schools</a> -sivustolta. </h3>
+    </div>
+    </div>
+    </div>
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PVL-Rails</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header">
+    <div class="logo">
+      <h1>PVL-Rails</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" class="active">Aloitus</a></li>
+        <li><a href="osa1.html">1. Tutustutaan web-ohjelmointiin </a></li>
+        <li><a href="osa2.html">2. Tutustutaan Railsiin</a></li>
+        <li><a href="osa3.html">3. Käyttäjätunnukset ja salasanat</a></li>
+        <li><a href="osa4.html">4. Sivut hienoiksi CSS:llä</a></li>
+        <li><a href="osa5.html">5. Viestien lähetys</a></li>
+        <li><a href="osa6.html">6. Web-sovellusten tietoturvasta</a></li>
+        <li><a href="osa7.html">7. Ohjeita tulevaan   </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="page  mar-top30" style="padding:5px;">
+  <div class="primary-col">
+    <div class="generic bdr-bottom-none">
+      <div class="panel" style="color:black;">
+        <div class="title">
+          <h1>Ohjeita tulevaan</h1>
+          Tekemämme sovellus jäi vielä aika kämäiseksi. Yksi tärkeä parannus olisi keskusteluun uuden viestin lähetys suoraan käyttäjän omalta sivuilta jossa näkyy kaikki keskustelut. 
+
+          </br></br>
+          <h1>Vinkkejä tuleviin Rails-sovelluksiin esimerkiksi työharjoittelussa: </h1>
+
+          <h1> Sovelluksen automaattiset testit </h1>
+          Sovelluksen toimintaa voidaan testata automaattitesteillä monilla tasoilla, modelien toiminnasta käyttöliittymään. Isoissa Rails-sovelluksissa käyttöliittymän automaattitestaus on tärkeää, jotta uusia toiminnallisuuksia koodattaessa vanhojen haluttu toiminta ei muutu. Rails-käyttöliittymätestausta kannattaa tehdä <a href="https://github.com/jnicklas/capybara">Capybaralla</a>. Capybara-testiin kirjoitetaan erilaisia automaattisia nappien klikkauksia sekä formien täyttämisiä, ja sen jälkeen tarkistus että sivulla on oikeanlainen sisältö expect(page).to have_content -vaiheessa. 
+
+          </br> </br>
+          <h1>Vapaita CSS-kirjastoja ja teemoja</h1>
+
+          CSS:n osaaminen on tärkeä taito, mutta joskus on ajankäytöllisesti parempi käyttää valmiita CSS-teemoja. Esimerkiksi <a href="http://www.free-css.com/free-css-templates"> täältä </a> löytyy ammattimaisen näköisiä CSS-teemoja jotka voi asentaa tiedostojen linkkaamisen avulla Rails-sovellukseen. 
+
+          </br> </br>
+          <h1>Reaaliaikaisuuden toteuttaminen</h1>
+          Reaaliaikaisuuden toteuttaminen tarkoittaa sitä, että käyttäjä saa sivulle uutta sisältöä palvelimelta ilman että päivittää sivua. Tähän on monia tekniikoita, joista yksi on <a href="https://en.wikipedia.org/wiki/WebSocket">websocketit</a>. Railsissa websocketeja voi käyttää joko <a href="https://github.com/rails/rails/tree/master/actioncable">sisäisellä ActionCable-kirjastolla </a> tai käyttäen hieman helppokäyttöisempiä ulkoisia kirjastoja kuten <a href="https://pusher.com/">Pusheria</a>. 
+    </div>
+    </div>

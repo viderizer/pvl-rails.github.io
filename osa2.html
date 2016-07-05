@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PVL-Rails</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header">
+    <div class="logo">
+      <h1>PVL-Rails</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" class="active">Aloitus</a></li>
+        <li><a href="osa1.html">1. Tutustutaan web-ohjelmointiin </a></li>
+        <li><a href="osa2.html">2. Tutustutaan Railsiin</a></li>
+        <li><a href="osa3.html">3. Käyttäjätunnukset ja salasanat</a></li>
+        <li><a href="osa4.html">4. Sivut hienoiksi CSS:llä</a></li>
+        <li><a href="osa5.html">5. Viestien lähetys </a></li>
+        <li><a href="osa6.html">6. Web-sovellusten tietoturvasta</a></li>
+        <li><a href="osa7.html">7. Ohjeita tulevaan   </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="page  mar-top30" style="padding:5px;">
+  <div class="primary-col">
+    <div class="generic bdr-bottom-none">
+      <div class="panel" style="color:black;">
+        <div class="title">
+          <h1>Tutustutaan Railsiin</h1>
+          <h2>Luodaan uusi sovellus ja avataan se tekstieditorissa</h2>
+        </div>
+         <p>Oletetaan että sinulla on nyt Rails asennettuna (löytyy atkin koneilta esimerkiksi). Luo komentoriviltä uusi sovellus kirjoittamalla kotihakemistossasi</br></br>
+         <code>
+         rails new chat
+         </code> </br></br>
+
+         Tämän jälkeen asenna jokin tekstieditori, mieluiten sellainen jolla on helppo käsitellä useita tiedostoja samaan aikaan, esimerkiksi <a href="https://www.sublimetext.com/"> Sublime Text </a>. Avaa kotihakemistoosi ilmestynyt chat -kansio tekstieditorilla. Huomaat että sinne on generoitu paljon erilaisia kansioita ja tiedostoja. Rails perustuu tiedostojen automaattigeneroinnille niin, että itse ohjelmointi olisi mahdollisimman helppoa. Tässä vaiheessa ei ole tärkeää tietää jokaisen tiedoston merkitystä, sillä tutustumme jokaiseen tarpeelliseen osaan kerrallaan. 
+          </p>    
+
+          </br>
+          <h1> Model-View-Controller -arkkitehtuuri </h1>
+          <h2>Luodaan malli käyttäjästä (User) ja käynnistetään palvelin </h2>
+
+          <img src="toinenkuva.png" /> 
+
+          <p>Rails perustuu Model-View-Controller- eli MVC-arkkitehtuuriin. Modelit ovat luokkia, joista luodaan olioita ja jotka tallettavat ja hakevat tietoa tietokannasta. Viewit ovat ihmiselle näkyvä osa. Controllerit yhdistävät Modelit ja Viewit. 
+
+          </br></br>
+          Modelit ovat .rb-päätteisiä ruby-luokkia. Tässä materiaalissa oletetaan että olet tutustunut jo esimerkiksi Javan olioihin. Railsin Modeleiden oliot tallennetaan tietokantaan automaattisesti ActiveRecord -nimisen systeemin kautta. Activerecord siis yhdistää tietokannan rivit olioiksi niin, ettei ohjelmoijan tarvitse kirjoittaa monimutkaisia SQL-lauseita. Riittää kun osaa käyttää olioita.</p>
+          </br>
+          <p>Controllerit huolehtivat tiedonkulusta Modeleiden ja Viewien välillä. Modelit ja Viewit kun ovat täysin erilaisia asioita, Modelit luokkia ja Viewit .html.erb -tiedostoja. Html-erb-päätteinen tiedosto on html-tiedosto, jonka sisällä on <% %> -tageissa Ruby-koodia ja jota Rails osaa tulkita. Rails tekee html.erb-tiedostoista html-tiedostoja ohjelman suorittamisessa. Esimerkiksi koodi </p>
+
+           </br> </br>
+          <code>
+          <%= link_to 'New User', new_user_path %>
+          </code> </br> </br>
+
+        näkyy sivulla selaimessa vieraillessa sourcekoodia tutkittaessa koodina 
+
+          </br> </br>
+          <img src="linkkikoodi.png"/> 
+           </br> </br>
+
+
+          </br>
+          Luodaan ensimmäinen model, controller ja view kaikki yhdellä kertaa kirjoittamalla chat-hakemistossa komentorivillä 
+          
+          </br> </br>
+          <code>
+          rails g scaffold User name:string 
+          </code> </br> </br>
+
+          Scaffold luo Userille model-, controller- ja view-tiedostoja. Sen jälkeen komennolla 
+
+          </br> </br>
+          <code>
+          rake db:migrate
+          </code> </br> </br>
+          ajetaan tietokantamigraatiot eli se luo User-taulun tietokantaamme. Sen jälkeen lisää config/routes.rb -tiedostoon rivi joka asettaa kaikki käyttäjät listaavan sivun juureksi: 
+
+          </br> </br>
+          <code>
+          root 'users#index'
+          </code> </br> </br>
+
+          Nyt kun käynnistät sovelluksen chat-hakemistosta komennolla 
+
+            </br> </br>
+          <code>
+          rails s
+          </code> </br> </br>
+
+          niin osoitteessa localhost:3000 sinulla pitäisi olla sovellus. </br></br>
+
+          <b> Tehtävä: Tutki sovellustasi selaimessa, erityisesti Useriin liittyviä toiminnallisuuksia. Scaffold-komento nimittäin loi esimerkiksi mahdollisuuden luoda uusi käyttäjä, näyttää sen tiedot sekä tuhota käyttäjä. Testaa sovellustasi. </b> </br>
+</br>
+          <h1>Palataan vielä tutkimaan Useriin liittyvää generoitua koodia</h1>
+          <p>Model tiedostossa app/models/user.rb on tyhjä luokka. Se kuitenkin perii ActiveRecord::Base -luokan eli sen käytössä on esimerkiksi konstruktori ja attribuuttien setterit ja getterit, jotka hakevat ja asettavat arvoja suoraan tietokantaan. Kokeillaan näitä ominaisuuksia Railsin komentoriviltä </p>
+
+
+            </br> 
+          <code>
+          rails c
+          </code> </br> </br>
+
+          <p>Luodaan uusi User Railsin komentorivillä komennolla </p>
+
+
+            </br> 
+          <code>
+          user1 = User.new name:"nimi"
+          </code> </br> </br>
+
+          <p>Huomataan että tämä ei anna user1:ille id:tä ja komentorivi kertoo sen id:n olevan nil. Id on luku, joka annetaan jokaiselle tietokantaan talletettavalle oliolle, ja saman luokan toisella oliolla ei saa olla samaa id:tä. Id:tä käytetään myöhemmin olion tietoja tietokannasta haettaessa. User1 saa id:n vasta kun se tallennetaan tietokantaan komennolla </p>
+
+
+            </br> 
+          <code>
+          user1.save!
+          </code> </br> </br>
+
+          <p>Nyt saamme tietää u:n id:n komennolla  </p>
+
+            </br> 
+          <code>
+          user1.id
+          </code> </br> </br>
+
+          <p>Uuden olion luonnin ja tallettamisen tietokantaan voi tehdä helpomminkin. Komento </p>
+
+           </br> 
+          <code>
+          user2 = User.create name:"nimi2"
+          </code> </br> </br>
+
+          <p>luo uuden Userin jonka nimi on nimi2, ja tallettaa sen tietokantaan. Nyt tarkista vielä user2:n id, se pitäisi olla yhtä suurempi kuin aiemman talletetun olion id.  </p>
+
+          </br>
+          <h1>Sovellus nettiin</h1>
+          <h2>Siirretään softa Gitin avulla Heroku-palvelun hostattavaksi</h2>
+          <h1> Keskustelukysymys: Mikä on versionhallinta? Mikä on Git? Mihin tarvitaan versionhallintaa? </h1>
+
+          Jos Git ei ole aiemmin tuttu niin tutustu <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"> peruskomentoihin </a> </br></br>
+
+          <p>Ennen sovelluksen nettiin laittamista täytyy määritellä tuotantotietokannaksi Postgresql, sillä Heroku ei tue SQlite -tietokantaa. Vaihda Gemfile-tiedoston rivi </p>
+
+           </br> 
+          <code>
+          gem 'sqlite3'
+          </code> </br> </br>
+
+          <p> riveiksi </p>
+
+          </br> 
+          <code>
+          group :development, :test do  </br> 
+            &nbsp gem 'sqlite3'  </br> 
+          end  </br> 
+
+          group :production do  </br> 
+            &nbsp gem 'pg'  </br> 
+          end
+          </code> </br> </br>
+
+
+
+          <p> Siirrämme sovelluksen nyt nettiin Heroku-palveluun. Luo Herokuun tunnus <a href="https://signup.heroku.com/">täältä</a>. Asenna Heroku Toolbelt eli Herokun komentorivikäyttöliittymä <a href="https://toolbelt.heroku.com/">täältä</a>. Kirjaudu ohjeen mukaisesti sisään. Luo Heroku-sovellus chat-hakemistossasi seuraavalla komennolla muuttaen pihlanchatti-nimen haluamaksesi:  </p>
+
+          </br>
+
+           <img src="herokucreate.png"/> 
+
+           </br></br>
+
+          <p>Seuraava teksti olettaa että sinulla on versionhallintajärjestelmä <a href="https://git-scm.com/">Git</a> asennettuna. Alustetaan tyhjä Git-repositorio chat-hakemistossa komennolla </p>
+
+          </br> 
+          <code>
+          git init
+          </code> </br> </br>
+
+          Sen jälkeen asetetaan Git-repositoriomme etärepositorioksi Herokun kertoma repositorio, minun tapauksessani siis 
+
+          </br> </br> 
+          <code>
+          git remote add heroku https://git.heroku.com/pihlanchatti.git
+          </code> </br> </br>
+
+          <div style="border: 1px solid red;padding:7px;">
+
+          <b style="color:red;">Toistuvat Git-komennot</b> </br></br>
+
+          <p>Koko sovellus pushataan Herokun git-remoteen seuraavilla komennoilla: </p>
+
+
+          </br> 
+          <code>
+          git add -A   </br>
+          git commit -am "kuvaus commitista" </br>
+          git push heroku master
+          </code> </br> </br>
+
+          </div>
+
+          </br>
+
+          Se ei kuitenkaan vielä toimi koska Herokussa pitää vielä ajaa tietokantamigraatiot komennolla 
+
+          </br></br>
+          <code>
+          heroku run rake db:migrate
+          </code> </br> </br>
+
+          <p>Nyt sovelluksesi löytyy siis osoitteesta jonka Heroku ilmoitti ylläolevan kuvan mukaan sitä luodessasi.</p>
+
+         </div>
+    </div>
+    </div>
+
