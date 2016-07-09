@@ -1,0 +1,8 @@
+title: PVL-Rails
+description: |
+  Rails-ohjelmointia lukiolaisille
+baseurl: ""
+url: "https://pvl-rails.github.io"
+include: ['_pages']
+kramdown:
+  input: GFM

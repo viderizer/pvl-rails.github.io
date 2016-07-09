@@ -1,0 +1,98 @@
+/**
+ * Site header
+ */
+.site-header {
+    background: #ee3233;
+    color: white;
+    padding: 32px 0;
+}
+
+.site-title {
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    color: white;
+    font-size: 42px;
+}
+
+.site-nav {
+    float: right;
+
+    .page-link {
+        color: white;
+        line-height: $base-line-height;
+        white-space: pre;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Lobster Two', cursive;
+}
