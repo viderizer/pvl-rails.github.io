@@ -8,7 +8,7 @@ permalink: /motivaatio/
 
  (demonstroi uuden sovelluksen luomisen) 
 
-[Sovelluksia joissa käytetty Railsia](http://skillcrush.com/2015/02/02/37-rails-sites/)
+##[Sovelluksia joissa käytetty Railsia](http://skillcrush.com/2015/02/02/37-rails-sites/)
 
 - Ask.fm
 - Urban Dictionary
@@ -17,7 +17,7 @@ permalink: /motivaatio/
 - Github
 - [Codeschool.com](https://wappalyzer.com/applications/ruby-rails)
 
-Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa](https://www.cs.helsinki.fi/courses/582368/2016/k/k/1)
+Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa](https://www.cs.helsinki.fi/courses/582368/2016/k/k/1). Suomessa on myös yksinomaan Rails-devaukseen keskittyviä softafirmoja kuten esim. [Kisko Labs](https://www.kiskolabs.com/about/). 
 
 ## Railsin ja Javan vertailua web-ohjelmoinnissa
 
