@@ -105,3 +105,18 @@ ole. Tähän on tarkoitus käyttää sen verran aikaa, että ymmärrät
 HTML:n, CSS:n ja JavaScriptin erot ja osaat luoda yksinkertaisen sivun
 jossa on käytetty kaikkia näitä kolmea tekniikkaa. Apua sivujen tekoon
 saat [W3Schools](http://www.w3schools.com/) -sivustolta.
+
+Nettisivujen siirto palvelimelle
+1) Ota ssh-yhteys palvelimelle komennolla 
+
+    ssh tunnus@evo.paivola.fi
+    
+Luo sinne public_html-kansio komennolla 
+
+    mkdir public_html
+    
+2) Tiedostot siirretään scp-komennolla. Ota selvää sopivasta syntaksista [täältä](http://www.hypexr.org/linux_scp_help.php) ja kysy neuvoa tarvittaessa. Oikea syntaksi riippuu esimerkiksi siitä, haluatko siirtää yksittäisen tiedoston eli index.html-tiedoston vai useita tiedostoja. 
+3) Asetetaan lukuoikeudet public_html-kansiolle kansiossa komennolla
+
+    chmod a+r .
+    
