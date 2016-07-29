@@ -7,6 +7,7 @@ permalink: /motivaatio/
 [Ruby on Rails](https://fi.wikipedia.org/wiki/Ruby_on_Rails) on Wikipedian mukaan Ruby-ohjelmointikieleen pohjautuva ohjelmistokehys. Opettelemme sitä juuri nyt sen takia, että sillä on nopeaa koodata toimivan sovelluksen alku. 
 
   rails new asd
+  
   rails generate controller Welcome index
 
 (get 'welcome/index' config/routes.rb:een)
