@@ -17,7 +17,7 @@ permalink: /motivaatio/
 
 Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa](https://www.cs.helsinki.fi/courses/582368/2016/k/k/1)
 
-##Railsin ja Javan vertailua web-ohjelmoinnissa
+## Railsin ja Javan vertailua web-ohjelmoinnissa
 
 [Täällä](https://www.quora.com/Is-Java-J2EE-better-than-Ruby-on-Rails)
 
