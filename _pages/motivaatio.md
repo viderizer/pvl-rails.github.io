@@ -18,7 +18,7 @@ permalink: /motivaatio/
 - [Codeschool.com](https://wappalyzer.com/applications/ruby-rails)
 - [Oma viimeisin Rails-sovellukseni](http://nyymi.herokuapp.com/)
 
-Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa](https://www.cs.helsinki.fi/courses/582368/2016/k/k/1). Suomessa on myös yksinomaan Rails-devaukseen keskittyviä softafirmoja kuten esim. [Kisko Labs](https://www.kiskolabs.com/about/). 
+Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa](https://www.cs.helsinki.fi/courses/582368/2016/k/k/1). Suomessa on myös yksinomaan Rails-devaukseen keskittyviä softafirmoja kuten esim. [Kisko Labs](https://www.kiskolabs.com/about/). Railsin ympärille on kehittynyt myös erilaisia eri tarkoituksellisia yhteisöitä, esim. [Rails Girls](http://railsgirls.com/). 
 
 ## Railsin ja Javan vertailua web-ohjelmoinnissa
 
