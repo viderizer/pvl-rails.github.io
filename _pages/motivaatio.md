@@ -10,11 +10,11 @@ permalink: /motivaatio/
 
 [Sovelluksia joissa käytetty Railsia](http://skillcrush.com/2015/02/02/37-rails-sites/)
 
-*Ask.fm
-*Urban Dictionary
-*Airbnb
-*[Slideshare](https://prograils.com/posts/top-10-famous-sites-built-with-ruby-on-rails)
-*Github
-*[Codeschool.com](https://wappalyzer.com/applications/ruby-rails)
+- Ask.fm
+- Urban Dictionary
+- Airbnb
+- [Slideshare](https://prograils.com/posts/top-10-famous-sites-built-with-ruby-on-rails)
+- Github
+- [Codeschool.com](https://wappalyzer.com/applications/ruby-rails)
 
 
