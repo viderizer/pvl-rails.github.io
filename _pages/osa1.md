@@ -121,12 +121,12 @@ Luo sinne public_html-kansio komennolla
 
 3) Asetetaan lukuoikeudet public_html-kansiolle ensin juuressa komennolla
 
-    chmod 750 public_html
+    chmod a+r public_html
     
 Sen jälkeen public_html-kansion tiedostoille 
 
     cd public_html
-    chmod 750 .
+    chmod a+r .
     
 Tiedostojen lukuoikeuksien säätäminen voi joskus olla hankalaa. Saat tietää komennolla
 
