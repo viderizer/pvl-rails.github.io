@@ -23,4 +23,6 @@ Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa](https://www
 
 esim. "The biggest advantage of Ruby over Java is that you can accomplish  task by writing fewer lines of coding. This helps in bug fixing and  increases speed of development."
 
+Myös alussa linkatun Wikipedia-artikkelin mukaan "Muista WWW-kehyksistä Rails erottuu lähinnä tarvittavan ohjelmakoodin pienestä määrästä ja konfigurointitarpeen puutteesta". 
+
 
