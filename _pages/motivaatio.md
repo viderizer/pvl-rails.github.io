@@ -8,8 +8,6 @@ permalink: /motivaatio/
 
  (demonstroi uuden sovelluksen luomisen) 
 
-Siirrytään katsomaan localhost:3000 -sivua jossa sovellus nyt pyörii. 
-
 [Sovelluksia joissa käytetty Railsia](http://skillcrush.com/2015/02/02/37-rails-sites/)
 
 - Ask.fm
