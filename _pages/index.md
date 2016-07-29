@@ -27,4 +27,4 @@ Materiaalin tekijä on Pihla Toivanen avustajinaan Jesper Hjorth ja
 Matti Nelimarkka. Kurssi pidetään ensimmäisen kerran Päivölän
 matematiikkalinjalla kesällä 2016.
 
-#[Motivaatio](http://pvl-rails.github.io/motivaatio)
+## [Motivaatio](http://pvl-rails.github.io/motivaatio)
