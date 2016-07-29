@@ -13,10 +13,7 @@ kotihakemistossasi
 
     rails new chat
 
-Tämän jälkeen asenna jokin tekstieditori, mieluiten sellainen jolla on
-helppo käsitellä useita tiedostoja samaan aikaan, esimerkiksi
-[Sublime Text](https://www.sublimetext.com/). Avaa kotihakemistoosi
-ilmestynyt chat -kansio tekstieditorilla. Huomaat että sinne on
+Avaa kotihakemistoosi ilmestynyt chat -kansio tekstieditorilla. Huomaat että sinne on
 generoitu paljon erilaisia kansioita ja tiedostoja. Rails perustuu
 tiedostojen automaattigeneroinnille niin, että itse ohjelmointi olisi
 mahdollisimman helppoa. Tässä vaiheessa ei ole tärkeää tietää jokaisen
