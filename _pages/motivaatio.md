@@ -4,7 +4,16 @@ title: Motivaatio - Miksi Rails
 permalink: /motivaatio/
 ---
 
-[Ruby on Rails](https://fi.wikipedia.org/wiki/Ruby_on_Rails) on Wikipedian mukaan Ruby-ohjelmointikieleen pohjautuva ohjelmistokehys. 
+[Ruby on Rails](https://fi.wikipedia.org/wiki/Ruby_on_Rails) on Wikipedian mukaan Ruby-ohjelmointikieleen pohjautuva ohjelmistokehys. Opettelemme sitä juuri nyt sen takia, että sillä on nopeaa koodata toimivan sovelluksen alku. 
+
+  rails new asd
+  rails generate controller Welcome index
+
+(get 'welcome/index' config/routes.rb:een)
+
+  rails s
+
+Siirrytään katsomaan localhost:3000 -sivua jossa sovellus nyt pyörii. 
 
 [Sovelluksia joissa käytetty Railsia](http://skillcrush.com/2015/02/02/37-rails-sites/)
 
