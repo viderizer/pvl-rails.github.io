@@ -17,4 +17,9 @@ permalink: /motivaatio/
 
 Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa](https://www.cs.helsinki.fi/courses/582368/2016/k/k/1)
 
+##Railsin ja Javan vertailua web-ohjelmoinnissa
+[https://www.quora.com/Is-Java-J2EE-better-than-Ruby-on-Rails](Täällä)
+
+esim. "The biggest advantage of Ruby over Java is that you can accomplish  task by writing fewer lines of coding. This helps in bug fixing and  increases speed of development."
+
 
