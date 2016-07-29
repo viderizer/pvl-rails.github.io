@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Motivaatio Railsiin
+title: Motivaatio - Miksi Rails
 permalink: /motivaatio/
 ---
-
-## Motivaatio - Miksi Rails
 
 [Ruby on Rails](https://fi.wikipedia.org/wiki/Ruby_on_Rails) on Wikipedian mukaan Ruby-ohjelmointikieleen pohjautuva ohjelmistokehys. 
 
