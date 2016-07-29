@@ -101,7 +101,9 @@ seuraavassa osassa teemmekin oman Rails-projektin.
 ### Tehtävä ennen railsiin siirtymistä
 
 Tee omat nettisivut users.paivola.fi -tunnuksellesi jos niitä ei
-ole. Tähän on tarkoitus käyttää sen verran aikaa, että ymmärrät
+ole. Asenna sitä varten jokin tekstieditori, mieluiten sellainen jolla on
+helppo käsitellä useita tiedostoja samaan aikaan, esimerkiksi
+[Sublime Text](https://www.sublimetext.com/). Nettisivujen tekoon on tarkoitus käyttää sen verran aikaa, että ymmärrät
 HTML:n, CSS:n ja JavaScriptin erot ja osaat luoda yksinkertaisen sivun
 jossa on käytetty kaikkia näitä kolmea tekniikkaa. Apua sivujen tekoon
 saat [W3Schools](http://www.w3schools.com/) -sivustolta.
