@@ -17,4 +17,6 @@ permalink: /motivaatio/
 - Github
 - [Codeschool.com](https://wappalyzer.com/applications/ruby-rails)
 
+Rails-koodausta myös opetetaan esimerkiksi [Helsingin Yliopistossa] (https://www.cs.helsinki.fi/courses/582368/2016/k/k/1)
+
 
