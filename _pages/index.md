@@ -26,3 +26,5 @@ sillä 5. osassa tehdään aiemman koodin päälle **viestisofta.**
 Materiaalin tekijä on Pihla Toivanen avustajinaan Jesper Hjorth ja
 Matti Nelimarkka. Kurssi pidetään ensimmäisen kerran Päivölän
 matematiikkalinjalla kesällä 2016.
+
+#[Motivaatio](http://pvl-rails.github.io/motivaatio)
