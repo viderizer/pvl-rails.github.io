@@ -138,7 +138,7 @@ riveiksi
         gem 'pg'
     end
 
-Siirrämme sovelluksen nyt nettiin Heroku-palveluun. Luo Herokuun
+Siirrämme sovelluksen nyt nettiin Heroku-palveluun. [Heroku](https://en.wikipedia.org/wiki/Heroku) on platform as a service -palvelu, joka mahdollistaa ohjelmien hostauksen ilman palvelininfrastruktuuriin perehtymistä. Luo Herokuun
 tunnus [täältä](https://signup.heroku.com/). Asenna Heroku Toolbelt
 eli Herokun komentorivikäyttöliittymä
 [täältä](https://toolbelt.heroku.com/).  Kirjaudu ohjeen mukaisesti
