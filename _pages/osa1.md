@@ -119,9 +119,14 @@ Luo sinne public_html-kansio komennolla
     
 2) Tiedostot siirretään scp-komennolla (scp = Secure Copy). Ota selvää sopivasta syntaksista [täältä](http://www.hypexr.org/linux_scp_help.php) ja kysy neuvoa tarvittaessa. Oikea syntaksi riippuu esimerkiksi siitä, haluatko siirtää yksittäisen tiedoston eli index.html-tiedoston vai useita tiedostoja. 
 
-3) Asetetaan lukuoikeudet public_html-kansiolle kansiossa komennolla
+3) Asetetaan lukuoikeudet public_html-kansiolle ensin juuressa komennolla
 
-    chmod a+r .
+    chmod 750 public_html
+    
+Sen jälkeen public_html-kansion tiedostoille 
+
+    cd public_html
+    chmod 750 .
     
 Tiedostojen lukuoikeuksien säätäminen voi joskus olla hankalaa. Saat tietää komennolla
 
@@ -135,8 +140,6 @@ ja
 
     cd ..
     
-siirryt kansioon ja takaisin sieltä. Jos esimerkiksi public_html-kansiolla ei ole lukuoikeuksia niin asetat ne juuressa komennolla 
-
-    chmod a+r public_html
+siirryt kansioon ja takaisin sieltä. 
     
     
