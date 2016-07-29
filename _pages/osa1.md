@@ -121,3 +121,20 @@ Luo sinne public_html-kansio komennolla
 
     chmod a+r .
     
+Tiedostojen lukuoikeuksien säätäminen voi joskus olla hankalaa. Saat tietää komennolla
+
+    ls -la
+
+kansioiden ja tiedostojen lukuoikeudet. Komennoilla 
+
+    cd kansio
+
+ja 
+
+    cd ..
+    
+siirryt kansioon ja takaisin sieltä. Jos esimerkiksi public_html-kansiolla ei ole lukuoikeuksia niin asetat ne juuressa komennolla 
+
+    chmod a+r public_html
+    
+    
