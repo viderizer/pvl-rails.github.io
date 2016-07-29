@@ -8,7 +8,7 @@ permalink: /motivaatio/
 
  (demonstroi uuden sovelluksen luomisen) 
 
-##[Sovelluksia joissa käytetty Railsia](http://skillcrush.com/2015/02/02/37-rails-sites/)
+## [Sovelluksia joissa käytetty Railsia](http://skillcrush.com/2015/02/02/37-rails-sites/)
 
 - Ask.fm
 - Urban Dictionary
