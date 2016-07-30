@@ -20,6 +20,11 @@ mahdollisimman helppoa. Tässä vaiheessa ei ole tärkeää tietää jokaisen
 tiedoston merkitystä, sillä tutustumme jokaiseen tarpeelliseen osaan
 kerrallaan.
 
+Lisäys: Lisää chat-hakemiston Gemfileen seuraavat rivit ennen muiden komentojen suorittamista:
+
+    gem 'execjs'
+    gem 'therubyracer', :platforms => :ruby 
+
 ## Model-View-Controller -arkkitehtuuri
 
 ### Luodaan malli käyttäjästä (User) ja käynnistetään palvelin
