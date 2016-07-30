@@ -13,9 +13,9 @@ kotihakemistossasi
 
     rails new chat
 
-Avaa kotihakemistoosi ilmestynyt chat -kansio tekstieditorilla. Huomaat että sinne on
+Avaa kotihakemistoosi ilmestynyt chat-kansio. Huomaat että sinne on
 generoitu paljon erilaisia kansioita ja tiedostoja. Rails perustuu
-tiedostojen automaattigeneroinnille niin, että itse ohjelmointi olisi
+tiedostojen automaattiseen generointiin niin, että itse ohjelmointi olisi
 mahdollisimman helppoa. Tässä vaiheessa ei ole tärkeää tietää jokaisen
 tiedoston merkitystä, sillä tutustumme jokaiseen tarpeelliseen osaan
 kerrallaan.
@@ -80,7 +80,8 @@ Nyt kun käynnistät sovelluksen chat-hakemistosta komennolla
 
     rails s
 
-niin osoitteessa localhost:3000 sinulla pitäisi olla sovellus.
+niin osoitteessa `localhost:3000` pitäisi näkyä selaimella toimiva sovellus.
+
 **Tehtävä: Tutki sovellustasi selaimessa, erityisesti Useriin
 liittyviä toiminnallisuuksia. Scaffold-komento nimittäin loi
 esimerkiksi mahdollisuuden luoda uusi käyttäjä, näyttää sen tiedot
