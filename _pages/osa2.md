@@ -25,6 +25,10 @@ Lisäys: Lisää chat-hakemiston Gemfileen seuraavat rivit ennen muiden komentoj
     gem 'execjs'
     gem 'therubyracer', :platforms => :ruby 
 
+Ja jotta lisätyt gemit asentuvat niin komenna komentorivillä chat-hakemistossa
+
+    bundle install
+
 ## Model-View-Controller -arkkitehtuuri
 
 ### Luodaan malli käyttäjästä (User) ja käynnistetään palvelin
