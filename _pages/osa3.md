@@ -26,17 +26,18 @@ ja aja
     bundle install
 
 Käyttäjään pitää lisätä password\_digest-attribuutti, johon tiiviste
-sitten tallentuu tietokantaan. Tehdään se komennolla
+tulee tallentumaan tietokantaan. Tehdään se komennolla
 
     rails g migration AddPasswordDigestToUser password_digest:string
 
-Sen jälkeen User-model tulee saada näyttämään tältä,
-has\_secure\_password-metodin kutsumisen lisäys liittyy BCryptin
-toimintaan. Has\_secure\_password lisää User-olioon password ja
-password\_confirmation-kentät. Jos näiden arvot eivät ole samat,
-Userin tallennus tietokantaan ei tule onnistumaan.
+Muokkaa User-model (`app/models/user.rb`) seuraavanlaiseksi:
 
 ![](/img/usermodel.png)
+
+`has_secure_password`-metodin kutsumisen lisäys liittyy BCryptin
+toimintaan. Se lisää User-olioon password ja
+password\_confirmation-kentät. Jos näiden arvot eivät ole samat,
+Userin tallennus tietokantaan ei tule onnistumaan.
 
 Ajetaan lopuksi tietokantamigraatiot komennolla
 
@@ -88,7 +89,7 @@ tarkistus ja sen perusteella joko sisäänkirjautumisen hyväksyminen tai
 hylkääminen. Tehdään ensin kuitenkin valmiiksi kirjautumisview. Lisää
 tiedosto `app/views/istuntos/new.html.erb` (luo ensin kansio istuntos). Kopioi seuraava tiedoston sisällöksi käsin tai
 [täältä](https://github.com/UMTti/chat/blob/master/app/views/istuntos/new.html.erb).
-Kirjautumissivu tulee osoitteeseen localhost:3000/istunto/new
+Kirjautumissivu tulee osoitteeseen `localhost:3000/istunto/new`
 
 ![](/img/istunto_formi.png)
 
@@ -121,19 +122,20 @@ oikein ja false muuten.
 
     user.authenticate(params[:password])
 
-Käyttäjän id:n saa näin. Kirjautumisen onnistuessa tallenna session
-user\_id-muuttujaan käyttäjän id
+Kirjautumisen onnistuessa tallenna session user\_id-muuttujaan käyttäjän id:
 
     session[:user_id] = user.id
 
-Uudelleenohjaus takaisin sivulle josta käyttäjä tuli.
-
-    redirect_to :back
-
-Uudelleenohjaus käyttäjän omalle sivulle.
+Jos sisäänkirjautuminen onnistuu, ohjataan käyttäjä omalle sivulleen:
 
     redirect_to user_path(user)
 
-Kun sisäänkirjautuminen toimii, lisätään `config/routes.rb`-tiedostoon reitti uloskirjautumiselle seuraavasti:
+Jos sisäänkirjautuminen epäonnistuu, ohjataan käyttäjä takaisin:
+
+    redirect_to :back
+
+Kokeile toteutuksesi toimivuutta: käynnistä palvelin komennolla `rails -s`, luo uusi salasanallinen käyttäjä ja kokeile kirjautua sille osoitteessa `localhost:3000/istunto/new`. 
+
+Jos kaikki toimii, lisää vielä `config/routes.rb`-tiedostoon reitti uloskirjautumiselle seuraavasti:
 
     get 'signout', to: 'istuntos#destroy'
